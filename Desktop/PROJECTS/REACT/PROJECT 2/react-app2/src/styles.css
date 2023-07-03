@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #23252C;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 317px;
+}
+
+/* Photo */
+
+.photo-container {
+    height: 317px;
+    width: 317px;
+}
+
+.photo {
+    height: 317px;
+    width: 317px;
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.photo img {
+    display: inline;
+    margin: 0 auto;
+    width: auto;
+    margin-bottom: 0px;
+}
+
+/* Main */
+
+.main-block {
+    margin-top: 0px;
+    background-color: #1A1B21;
+}
+
+.name {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top:26px;
+    text-align: center;
+    background-color: #1A1B21;
+}
+
+.description {
+    font-size: 12.8px;
+    font-weight: 400;
+    color: #F3BF99;
+    margin-top: 11px;
+    text-align: center;
+    background-color: #1A1B21;
+}
+
+.website {
+    font-size: 12.24px;
+    font-weight: 300;
+    text-decoration: none;
+    margin-top: 11px;
+    text-align: center;
+    background-color: #1A1B21;
+}
+
+a:link {
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: underline; 
+}
+
+.buttons {
+    text-align: center;
+    background-color: #1A1B21;
+}
+
+.email-button, .linkedin-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email-button {
+    height: 34px;
+    width: 115px;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px;
+    border-color: #D1D5DB;
+    border-radius: 6px;
+    margin-top: 39px;
+    margin-right: 17px;
+}
+
+.email-icon, .linkedin-icon {
+    height: 16px;
+    width: 16px;
+    margin-right: 5px;
+}
+
+.linkedin-button {
+    height: 34px;
+    width: 115px;
+    background-color: #5093E2;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    border: 1px;
+    border-color: #5093E2;
+    border-radius: 6px;
+}
+
+.email-button:hover {
+    background-color: #D1D5DB;
+    color: #1A1B21;
+    transition: all 0.3s ease;
+}
+
+.linkedin-button:hover {
+    background-color: #3d87dc;
+    color: #1A1B21;
+    transition: all 0.3s ease;
+}
+
+.about {
+    margin-top: 39px;
+}
+
+.interest {
+    margin-top: 23px;
+}
+
+.about, .interest {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 35px;
+    margin-right: 35px;
+    background-color: #1A1B21;
+}
+
+.about-description, .interest-description {
+    margin-top: 12px;
+    font-size: 10.24px;
+    font-weight: 300;
+    color: #DCDCDC;
+    margin-left: 35px;
+    margin-right: 35px;
+    background-color: #1A1B21;
+}
+
+.interest-description {
+    margin-bottom: 44px;
+}
+
+/* Footer */
+
+.footer-background {
+    background-color: #161619;
+    height: 64px;
+    width: 317px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instagram {
+    height: 25px; 
+    width: 25px;
+}
+
+.instagram:hover {
+    background-color: #D1D5DB;
+    color: #1A1B21;
+    transition: all 0.3s ease;
+}
