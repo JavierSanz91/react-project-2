@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* NAV */
+
+.header {
+    width: 550px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F55A5A;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.title {
+    font-size: 14.46px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
