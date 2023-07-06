@@ -5,8 +5,10 @@
   height: 5%;
   background-color: #000000;
   border: 1px solid #000000;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  z-index: 100;
 }
 
 .contribution {

@@ -4,6 +4,7 @@ import Navigation from "./modules/Navigation";
 import Claim from "./modules/Claim";
 import Filters from "./modules/Filters";
 import Jobs from "./modules/Jobs";
+import Footer from "./modules/Footer";
 import JobsData from "./JobsData";
 
 export default function App() {
@@ -45,6 +46,7 @@ export default function App() {
             <div>
                 {jobsElements}
             </div>
+            <Footer />
         </div>
     );
 }

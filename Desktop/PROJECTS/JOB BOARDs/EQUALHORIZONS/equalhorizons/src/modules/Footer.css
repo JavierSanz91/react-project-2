@@ -1,0 +1,64 @@
+.footer-container {
+    width: 100%;
+  }
+  
+  .legal-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 125px auto 0;
+    padding: 1% 10%;
+    border-top: 3px solid #000000;
+    border-bottom: 3px solid #000000;
+  }
+  
+  .legal-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .legal-terms,
+  .rights-reserved {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  a:link {
+    color: #000000;
+    font-style: none;
+  }
+
+  /* SUPER FOOTER */
+  
+  .super-footer {
+    border-top: none;
+    text-align: center;
+    padding: 1% 10%;
+  }
+  
+  .rights-reserved {
+    margin-bottom: 10rem; /* Adjust the value as needed */
+  }
+  
+  .super-footer p {
+    margin: 0;
+  }
+  
+  .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 1%;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .social-icons:hover {
+    cursor: pointer;
+  }
+  

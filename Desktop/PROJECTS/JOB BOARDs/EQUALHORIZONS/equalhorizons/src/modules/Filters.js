@@ -25,9 +25,9 @@ const industries = [
 const seniorityLevels = ["Entry", "Mid", "Senior", "Executive", "Non-specified"];
 
 export default function Filters() {
-    const [selectedState, setSelectedState] = useState("Location");
-    const [selectedIndustry, setSelectedIndustry] = useState("Industry");
-    const [selectedSeniority, setSelectedSeniority] = useState("Seniority");
+    const [selectedState, setSelectedState] = useState("all locations");
+    const [selectedIndustry, setSelectedIndustry] = useState("all industries");
+    const [selectedSeniority, setSelectedSeniority] = useState("all seniority levels");
 
     const handleSelectState = (e) => {
         setSelectedState(e);
@@ -46,7 +46,7 @@ export default function Filters() {
             <div className="filtersContainer">
                 <Dropdown onSelect={handleSelectState}>
                     <Dropdown.Toggle variant="secondary" id="dropdown-basic">
-                        {selectedState}
+                        {selectedState !== "all locations" ? selectedState : "Location"}
                     </Dropdown.Toggle>
 
                     <Dropdown.Menu>
@@ -58,7 +58,7 @@ export default function Filters() {
 
                 <Dropdown onSelect={handleSelectIndustry}>
                     <Dropdown.Toggle variant="secondary" id="dropdown-basic">
-                        {selectedIndustry}
+                        {selectedIndustry !== "all industries" ? selectedIndustry : "Industry"}
                     </Dropdown.Toggle>
 
                     <Dropdown.Menu>
@@ -70,7 +70,7 @@ export default function Filters() {
 
                 <Dropdown onSelect={handleSelectSeniority}>
                     <Dropdown.Toggle variant="secondary" id="dropdown-basic">
-                        {selectedSeniority}
+                        {selectedSeniority !== "all seniority levels" ? selectedSeniority : "Seniority"}
                     </Dropdown.Toggle>
 
                     <Dropdown.Menu>
@@ -81,7 +81,12 @@ export default function Filters() {
                 </Dropdown>
             </div>
             <div className="resultsInfo">
-                <p><span className="resultsInfoBold">85 jobs </span> in <span className="resultsInfoBold"> all locations </span> in all industries in all <span className="resultsInfoBold"> seniority </span></p>
+                <p>
+                    <span className="resultsInfoBold">85 jobs </span> in 
+                    <span className="resultsInfoBold"> {selectedState} </span> in 
+                    <span className="resultsInfoBold"> {selectedIndustry} </span> in 
+                    <span className="resultsInfoBold"> {selectedSeniority} </span> level
+                </p>
             </div>
         </div>
     );
