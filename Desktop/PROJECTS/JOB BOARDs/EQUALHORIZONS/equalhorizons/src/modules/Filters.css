@@ -1,0 +1,43 @@
+.filtersContainer {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.filtersContainer .btn-secondary {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.filtersContainer .dropdown {
+    margin: 0 10px;
+}
+
+.dropdown-toggle::after {
+    margin-left: 50px;
+}
+
+.filtersContainer p {
+    margin-top: 20px;
+}
+
+.resultsInfo {
+    margin-bottom: 50px;
+}
+
+.resultsInfo p {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.resultsInfoBold {
+    font-weight: bold;
+}

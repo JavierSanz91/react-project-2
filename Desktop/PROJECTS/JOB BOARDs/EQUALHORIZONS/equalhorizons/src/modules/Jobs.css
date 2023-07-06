@@ -1,0 +1,78 @@
+.job-card {
+    max-width: 35%;
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+/* FIRST BLOCK */
+
+.job_company_name, .job_location, .job_remote  {
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.or {
+    font-size: 0.75rem;
+    font-weight: 300;
+}
+
+.job_location {
+    margin-right: 2px;
+}
+
+.job_remote {
+    margin-left: 2px;
+}
+
+.first-block-right {
+    margin-left: auto;
+}
+
+/* SECOND BLOCK */
+
+.job_title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* THIRD BLOCK */
+
+.third-block {
+    justify-content: space-between;
+    align-items: end;
+}
+
+.tags {
+    gap: 5px;
+}
+
+.job_industry, .job_seniority {
+    font-size: 0.75rem;
+    font-weight: 300;
+    padding: 5px 25px;
+}
+
+.third-block-hover {
+    gap: 10px;
+}
+
+.job-card .third-block-hover {
+    display: none; 
+}
+
+.job-card:hover .third-block-hover {
+    display: flex; 
+}
+
+.job_apply, .job_view {
+    width: 150px;
+}

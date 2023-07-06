@@ -1,0 +1,9 @@
+.claim-box {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.claim {
+    font-size: 2rem;
+    text-align: center;
+}
